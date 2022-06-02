@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="1ba90e90-60a5-4132-a74a-7d68fede7267" name="HSQLDB (Local) Mapping">
+      <data-sources db="51e6cbf7-de54-4362-9a7a-e02dda0153de" ddl="30b94e48-fca2-4e1e-884b-fb31942a640c" />
+    </mapping>
+    <mapping uuid="d6a702d3-88a5-42c4-9014-afd87de88387" name="postgres Mapping">
+      <data-sources db="9625f3c9-a8fa-4206-9968-f39b25837ede" ddl="24fc1d12-233e-4a60-a4b1-cff6c74bc55a" />
+      <scope>
+        <node kind="database" qname="@">
+          <node kind="schema" qname="@" />
+        </node>
+      </scope>
+    </mapping>
+  </component>
+</project>

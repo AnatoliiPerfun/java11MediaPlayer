@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.media.MediaView?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mediaplayer.HelloController">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <Menu mnemonicParsing="false" onAction="#loadVideo" text="Video">
+                <MenuItem mnemonicParsing="false" text="Load" />
+            </Menu>
+        </MenuBar>
+    </top>
+    <left>
+        <ListView fx:id="videoLibrary" onMouseClicked="#onVideoSelected" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+    </left>
+    <bottom>
+        <Button mnemonicParsing="false" onMouseClicked="#toggleVideoPlay" text="Play / Pause" BorderPane.alignment="CENTER" />
+    </bottom>
+    <center>
+        <MediaView fx:id="player" fitHeight="400.0" fitWidth="600.0" BorderPane.alignment="CENTER" />
+    </center>
+</BorderPane>
